@@ -174,7 +174,6 @@ def plot_decision_boundary(model, data, device, title):
     decision_boundary = (255 * decision_boundary).long().permute(2,1,0).cpu().numpy().astype(np.uint8)
     fig,ax = plt.subplots()
     fig.set_size_inches(10,8)
-    plt.style.use("seaborn-talk")
     cs = sns.color_palette("muted")
 
     plt.imshow( decision_boundary)
@@ -245,7 +244,6 @@ def main():
         return colorsys.hls_to_rgb(c[0], 1 - amount * (1 - c[1]), c[2])
     fig,ax = plt.subplots()
     fig.set_size_inches(10,8)
-    plt.style.use("seaborn-talk")
     cs = sns.color_palette("muted")
     # plt.imshow( decision_boundary)
     plt.scatter(data2[0][:test_samples_per_class,0], data2[0][:test_samples_per_class,1],color= lighten_color("r",1.0),label="Class 1")

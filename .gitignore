@@ -43,6 +43,7 @@ aten/src/ATen/cuda/CUDAConfig.h
 benchmarks/.data
 caffe2/cpp_test/
 dist/
+forget/
 docs/build/
 docs/cpp/src
 docs/src/**/*
